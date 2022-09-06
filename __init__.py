@@ -104,7 +104,7 @@ class Choice:
 
     def main(stdscr):
         h , w = stdscr.getmaxyx()
-        print("Hello World")
+        print("Hello World!")
 
 
 
