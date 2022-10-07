@@ -18,7 +18,7 @@ class Menu:
         self.LOP = newLOP
 
     def chageLOF(self, newLOF):
-        self.LOF = newLOF
+      self.LOF = newLOF
 
     def chageName(self, newname):
         self.name = newname
@@ -75,8 +75,9 @@ class Menu:
                 if Index <= len(self.LOP)-2:
                     Index = Index + 1
             elif char == 10:
-                LOF[Index](stdscr)
+                self.LOF[Index](stdscr)
             stdscr.refresh()
+            curses.setsyx(box1Y, box1X)
         
 class Choice:
     def __init__(self, Question, Ans1, Ans2, AnsFunc1, AnsFunc2, name ,Stdscr):
